@@ -55,16 +55,15 @@ dotnet run
 6. Acesse o Swagger:
 https://localhost:<porta>/swagger
 
-##📮 Endpoint principal
+## 📮 Endpoint principal
+
 POST /api/simulacoes/calcular
----
 🔽 Corpo da requisição (JSON):
 {
   "carroId": 1,
   "dataInicio": "2025-05-10",
   "dataFim": "2025-05-15"
 }
----
 🔼 Resposta (200 OK):
 {
   "carro": "HB20",
