@@ -55,18 +55,17 @@ dotnet run
 6. Acesse o Swagger:
 https://localhost:<porta>/swagger
 
-📮 Endpoint principal
+##📮 Endpoint principal
 POST /api/simulacoes/calcular
+---
 🔽 Corpo da requisição (JSON):
 {
   "carroId": 1,
   "dataInicio": "2025-05-10",
   "dataFim": "2025-05-15"
 }
+---
 🔼 Resposta (200 OK):
-json
-Copiar
-Editar
 {
   "carro": "HB20",
   "marca": "Hyundai",
@@ -77,20 +76,22 @@ Editar
   "desconto": "10%",
   "valorFinal": 540.0
 }
+---
 💡 Regras de negócio
-Desconto de 5% para locações com 3 a 6 dias
+- Desconto de 5% para locações com 3 a 6 dias
 
-Desconto de 10% para locações com 7 dias ou mais
+- Desconto de 10% para locações com 7 dias ou mais
 
-Validações aplicadas para:
+- Validações aplicadas para:
 
-Datas inválidas
+- Datas inválidas
 
-Carros não encontrados
+- Carros não encontrados
+---
 
 📚 Observações finais
-O projeto está dividido em camadas para manter a organização e separação de responsabilidades.
+- O projeto está dividido em camadas para manter a organização e separação de responsabilidades.
 
-Foram utilizados DTOs para melhorar a clareza dos dados de entrada e saída.
+- Foram utilizados DTOs para melhorar a clareza dos dados de entrada e saída.
 
-Código comentado e com mensagens amigáveis para o usuário.
+- Código comentado e com mensagens amigáveis para o usuário.
